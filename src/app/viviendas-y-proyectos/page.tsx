@@ -61,7 +61,6 @@ export default function Page() {
           </div>
           <p className="section-footnote">
             La disposición y las dimensiones deben verificarse por proyecto.
-            Fuente: página “Tipos de vivienda” del sitio anterior.
           </p>
         </div>
       </section>
@@ -74,14 +73,14 @@ export default function Page() {
           <h3>Catálogo actual en revisión</h3>
           <p>
             Los planos, superficies y características de los proyectos actuales
-            se incorporarán con información aprobada por la cooperativa.
+            se van a incorporar con la información aprobada por la cooperativa.
             Mientras tanto, podés solicitar orientación directamente.
           </p>
         </div>
         <Notice>
           La división entre tipologías anteriores y actuales es una propuesta de
-          arquitectura. Todavía debemos confirmar con vos qué evolución o
-          diferencia querés mostrar.
+          arquitectura. Todavía debemos confirmar qué 'evolución' o
+          diferencia vamos a mostrar.
         </Notice>
       </section>
       <ContactBlock />

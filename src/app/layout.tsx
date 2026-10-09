@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Header } from "@/components/layout/header";
+import { MotionEnhancements } from "@/components/ui/motion-enhancements";
 import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 const geist = Geist({
@@ -33,6 +34,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <MotionEnhancements />
       </body>
     </html>
   );

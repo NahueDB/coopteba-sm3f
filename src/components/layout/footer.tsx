@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { navigation, site } from "@/content/site";
+import { navigation, site, areaContacts, instagram } from "@/content/site";
 export function Footer() {
   return (
     <footer className="site-footer">
@@ -40,6 +40,33 @@ export function Footer() {
           <p>{site.address}</p>
           <a href={site.phoneHref}>{site.phone}</a>
           <a href={`mailto:${site.email}`}>{site.email}</a>
+        </div>
+      </div>
+      <div className="container footer-areas">
+        <div className="footer-areas-heading">
+          <div>
+            <h2>Un contacto para cada consulta.</h2>
+            <p>
+              Contactos por área publicados en el sitio institucional. Vigencia
+              pendiente de confirmación.
+            </p>
+          </div>
+          <a
+            className="footer-instagram"
+            href={instagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram · {instagram.handle} ↗
+          </a>
+        </div>
+        <div className="area-contacts">
+          {areaContacts.map((contact) => (
+            <div key={contact.email}>
+              <h3>{contact.area}</h3>
+              <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            </div>
+          ))}
         </div>
       </div>
       <div className="container footer-bottom">

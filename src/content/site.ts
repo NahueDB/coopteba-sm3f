@@ -229,3 +229,26 @@ export const commissions = [
   "Derechos Humanos",
   "Mantenimiento",
 ];
+
+// Correos publicados en /contacto/ del sitio institucional. Confirmar vigencia.
+export const areaContacts = [
+  { area: "Administración", email: "administracion@cooptebasmtytf.com.ar" },
+  { area: "Finanzas", email: "finanzas@cooptebasmtytf.com.ar" },
+  { area: "Cierre de planes", email: "cierredeplanes@cooptebasmtytf.com.ar" },
+  { area: "Tierra y Obras", email: "tierrayobras@cooptebasmtytf.com.ar" },
+  { area: "Salón", email: "salon@cooptebasmtytf.com.ar" },
+  { area: "Géneros", email: "generos@cooptebasmtytf.com.ar" },
+];
+export type InstagramPost = {
+  id: string;
+  image: string; // Imagen local o URL permitida en next.config.ts.
+  alt: string;
+  permalink: string;
+  caption: string;
+};
+export const instagram = {
+  handle: "@coopteba_smy3f",
+  url: "https://www.instagram.com/coopteba_smy3f/",
+  // Cargar publicaciones reales mediante una integración autorizada o edición.
+  posts: [] as InstagramPost[],
+};

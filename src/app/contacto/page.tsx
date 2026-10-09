@@ -49,7 +49,7 @@ export default function Page() {
             />
           </div>
           <Notice>
-            Confirmá los horarios antes de acercarte. El sitio anterior muestra
+            Confirmar los horarios. El sitio anterior muestra
             correos de dos dominios distintos: usamos el de su cabecera,
             pendiente de validación institucional.
           </Notice>

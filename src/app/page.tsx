@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { InstagramCarousel } from "@/components/ui/instagram-carousel";
 import { projects, posts, steps } from "@/content/site";
 import {
   ButtonLink,
@@ -59,7 +60,11 @@ export default function Home() {
               loading="eager"
             />
           </div>
-          <div className="hero-caption">
+          <Link
+            href="/viviendas-y-proyectos"
+            className="hero-caption"
+            aria-label="Explorar viviendas y proyectos"
+          >
             <span>Más que viviendas.</span>
             <strong>
               Espacios para vivir
@@ -68,20 +73,29 @@ export default function Home() {
             <span className="caption-arrow" aria-hidden="true">
               ↗
             </span>
-          </div>
+          </Link>
           <span className="vertical-caption">SAN MARTÍN + TRES DE FEBRERO</span>
         </div>
       </section>
       <div className="principles">
-        <div className="container principles-inner">
-          <span>Vivienda</span>
-          <span aria-hidden="true">✳</span>
-          <span>Participación</span>
-          <span aria-hidden="true">✳</span>
-          <span>Comunidad</span>
-          <span aria-hidden="true">✳</span>
-          <span>Cooperación</span>
-        </div>
+        <ul
+          className="container principles-inner"
+          aria-label="Nuestros valores"
+        >
+          {["Vivienda", "Participación", "Comunidad", "Cooperación"].map(
+            (value, index) => (
+              <li key={value}>
+                <span
+                  className={`value-symbol value-${index}`}
+                  aria-hidden="true"
+                >
+                  {["⌂", "✳", "◎", "↗"][index]}
+                </span>
+                {value}
+              </li>
+            ),
+          )}
+        </ul>
       </div>
       <section className="section container about-grid" id="la-cooperativa">
         <div className="about-visual">
@@ -207,6 +221,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <InstagramCarousel />
       <section className="section container faq-section">
         <div>
           <SectionHeading
