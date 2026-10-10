@@ -63,12 +63,12 @@ async function ProjectDetail({
             <h2>Un recorrido en imágenes</h2>
             <p>
               Este proyecto forma parte del archivo institucional de COOPTEBA
-              SM3F en {p.place}, partido de {p.district}. Las fotografías
-              documentan su recorrido, pero no permiten establecer su estado
+              SM3F en {p.place}, partido {p.district}. Las fotografías
+              documentan su recorrido, pero no representan su estado
               actual.
             </p>
             <Notice>
-              Ficha en preparación: faltan confirmar la historia completa, las
+              Ficha en preparación: faltan agregar imágenes y confirmar la historia completa, las
               unidades, las tipologías, las fechas y el estado actual del
               proyecto.
             </Notice>

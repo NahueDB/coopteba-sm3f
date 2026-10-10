@@ -13,8 +13,10 @@ export default function Page() {
       </PageIntro>
       <section className="container content-section">
         <Notice>
-          El material disponible proviene del sitio anterior. Su vigencia debe
-          confirmarse antes de utilizarlo para tomar decisiones sobre un plan.
+          El material publicado en este espacio es de carácter institucional y
+          público. No se incluyen documentos internos ni datos personales. La
+          información de los documentos publicados puede estar sujeta a cambios
+          y actualizaciones; confirmar la vigencia de los datos con la cooperativa antes de tomar decisiones.
         </Notice>
         <h2 style={{ marginBottom: 30 }}>Material institucional</h2>
         <div className="document-list">
@@ -26,8 +28,8 @@ export default function Page() {
                 archivo institucional.
               </p>
               <p className="small-label">
-                PDF · 1,3 MB · Archivo publicado en 2022 · Vigencia por
-                confirmar
+                PDF · 1,3 MB · Archivo publicado en 2022 · <span className="strongText"> Vigencia por
+                confirmar</span>
               </p>
             </div>
             <a
@@ -42,8 +44,7 @@ export default function Page() {
         <div className="empty-state" style={{ marginTop: 35 }}>
           <h3>Otros recursos</h3>
           <p>
-            Este espacio permitirá incorporar documentos aprobados, con título,
-            descripción y fecha o versión. No publicaremos documentación interna
+            Este espacio permitirá incorporar documentos aprobados, como proyectos de construcción, informes y estudios. No se publicará documentación interna
             ni datos personales.
           </p>
         </div>

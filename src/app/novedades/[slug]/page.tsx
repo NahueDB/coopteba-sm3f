@@ -60,9 +60,8 @@ async function Article({ params }: { params: Promise<{ slug: string }> }) {
             <p key={t}>{t}</p>
           ))}
           <Notice>
-            Resumen del archivo histórico, pendiente de aprobación editorial. No
-            es información de una actividad vigente.
-          </Notice>
+            Resumen del archivo original, pendiente de revisión y aprobación editorial. { <br/> } No es información de una actividad vigente.
+          </Notice> 
           <a
             href={p.source}
             className="source-link"

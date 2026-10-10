@@ -1,3 +1,4 @@
+import { SocialLinks, InteractiveMap } from "@/components/ui/external-media";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { site } from "@/content/site";
@@ -28,7 +29,7 @@ export default function Page() {
               <a href={`mailto:${site.email}`}>{site.email}</a>
             </p>
             <p>
-              <span>Horarios publicados en el sitio anterior</span>
+              <span>Horarios</span>
               {site.hours}
             </p>
           </div>
@@ -49,12 +50,21 @@ export default function Page() {
             />
           </div>
           <Notice>
-            Confirmar los horarios. El sitio anterior muestra
-            correos de dos dominios distintos: usamos el de su cabecera,
-            pendiente de validación institucional.
+            Confirmar los horarios. {<br />} El sitio anterior muestra correos
+            de dos dominios distintos: se usó el de la cabecera, pendiente de
+            validación institucional.
           </Notice>
         </div>
         <ContactForm />
+      </section>
+      <section className="container section map-section">
+        <div>
+          <p className="eyebrow">Nuestra sede</p>
+          <h2>Vení a conocernos.</h2>
+          <p className="lead">Explorá la ubicación y elegí cómo llegar.</p>
+          <SocialLinks />
+        </div>
+        <InteractiveMap />
       </section>
     </>
   );

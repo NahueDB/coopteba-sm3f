@@ -1,3 +1,5 @@
+import { VideoPlayer } from "@/components/ui/external-media";
+import { videoById } from "@/content/site";
 import type { Metadata } from "next";
 import { ProjectList } from "@/components/ui/project-list";
 import {
@@ -19,8 +21,8 @@ export default function Page() {
       </PageIntro>
       <section className="container content-section">
         <Notice>
-          Las imágenes y ubicaciones provienen del sitio institucional. Los
-          estados de obra, las fechas de entrega y la disponibilidad no están
+          Las imágenes y ubicaciones se basan en el sitio original. Los estados
+          de obra, las fechas de entrega y la disponibilidad no están
           confirmados.
         </Notice>
         <ProjectList />
@@ -79,8 +81,27 @@ export default function Page() {
         </div>
         <Notice>
           La división entre tipologías anteriores y actuales es una propuesta de
-          arquitectura. Todavía debemos confirmar qué 'evolución' o
-          diferencia vamos a mostrar.
+          arquitectura. Todavía debemos confirmar qué “evolución” o diferencia
+          vamos a mostrar.
+        </Notice>
+      </section>
+      <section className="section container">
+        <SectionHeading
+          eyebrow="Recorridos en video"
+          title="Una mirada desde adentro."
+        >
+          Conocé dos recorridos de viviendas publicados en el canal de la
+          cooperativa.
+        </SectionHeading>
+        <div className="video-grid">
+          <VideoPlayer video={videoById("D5TE7ecmnsA")} />
+          <VideoPlayer video={videoById("u8vP2Fx1oYA")} />
+        </div>
+        <Notice>
+          Estos recorridos son material de archivo. No acreditan disponibilidad
+          ni representan necesariamente las tipologías actuales. Confirmar a qué
+          proyectos corresponden y revisar las características antes de
+          publicarlas como vigentes.
         </Notice>
       </section>
       <ContactBlock />

@@ -1,6 +1,7 @@
+import { SocialLinks } from "@/components/ui/external-media";
 import Image from "next/image";
 import Link from "next/link";
-import { navigation, site, areaContacts, instagram } from "@/content/site";
+import { navigation, site, areaContacts } from "@/content/site";
 export function Footer() {
   return (
     <footer className="site-footer">
@@ -51,14 +52,7 @@ export function Footer() {
               pendiente de confirmación.
             </p>
           </div>
-          <a
-            className="footer-instagram"
-            href={instagram.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram · {instagram.handle} ↗
-          </a>
+          <SocialLinks />
         </div>
         <div className="area-contacts">
           {areaContacts.map((contact) => (

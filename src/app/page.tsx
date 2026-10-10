@@ -1,7 +1,8 @@
+import { SocialLinks, VideoPlayer } from "@/components/ui/external-media";
 import Image from "next/image";
 import Link from "next/link";
 import { InstagramCarousel } from "@/components/ui/instagram-carousel";
-import { projects, posts, steps } from "@/content/site";
+import { projects, posts, steps, videoById } from "@/content/site";
 import {
   ButtonLink,
   SectionHeading,
@@ -11,6 +12,7 @@ import {
   InstitutionalCards,
   ContactBlock,
   Arrow,
+  Notice,
 } from "@/components/ui/shared";
 export default function Home() {
   return (
@@ -220,6 +222,24 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section>
+      <section className="section container video-feature">
+        <div>
+          <SectionHeading
+            eyebrow="Nuestra comunidad en video"
+            title="Un año de encuentros. Un proyecto que sigue."
+          >
+            Compartimos el registro de 2024 de la cooperativa: una invitación a
+            acercarte a su vida comunitaria.
+          </SectionHeading>
+          <Notice>
+            Video de archivo: corresponde a 2024, no a las actividades del año
+            actual. Su contenido completo y accesibilidad deben revisarse antes
+            de publicar.
+          </Notice>
+          <SocialLinks />
+        </div>
+        <VideoPlayer video={videoById("OzbBvx-oAyw")} />
       </section>
       <InstagramCarousel />
       <section className="section container faq-section">

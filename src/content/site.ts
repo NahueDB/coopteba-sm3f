@@ -83,7 +83,7 @@ export const projects: Project[] = [
   project(
     "biarritz-3040",
     "Biarritz 3040",
-    "San Martín",
+    "Villa Ballester",
     "General San Martín",
     "Un proyecto incluido en la galería institucional de edificios y viviendas.",
   ),
@@ -251,4 +251,65 @@ export const instagram = {
   url: "https://www.instagram.com/coopteba_smy3f/",
   // Cargar publicaciones reales mediante una integración autorizada o edición.
   posts: [] as InstagramPost[],
+};
+
+export const socialLinks = [
+  { label: "Instagram", url: instagram.url },
+  { label: "Facebook", url: "https://www.facebook.com/coopteba.martin" },
+  { label: "YouTube", url: "https://www.youtube.com/@COOPTEBASM3F" },
+];
+export type Video = {
+  id: string;
+  title: string;
+  duration: string;
+  image: string;
+};
+export const videos: Video[] = [
+  {
+    id: "pnyb3wsDwQg",
+    title: "FECOOPTEBA 2025  CONTACTO",
+    duration: "4:42",
+    image: "/images/videos/pnyb3wsDwQg.jpg",
+  },
+  {
+    id: "ugXP_WPF7A8",
+    title: "Video FECOOPTEBA 2025",
+    duration: "4:42",
+    image: "/images/videos/ugXP_WPF7A8.jpg",
+  },
+  {
+    id: "OzbBvx-oAyw",
+    title: "2024 en COOPTEBA SM3F",
+    duration: "1:43",
+    image: "/images/videos/OzbBvx-oAyw.jpg",
+  },
+  {
+    id: "vmDHQSh27N8",
+    title: "Como abonar con link pagos",
+    duration: "1:31",
+    image: "/images/videos/vmDHQSh27N8.jpg",
+  },
+  {
+    id: "D5TE7ecmnsA",
+    title: "Recorrido Casa Grande, COOPTEBA, San Martin y 3 de Febrero",
+    duration: "2:56",
+    image: "/images/videos/D5TE7ecmnsA.jpg",
+  },
+  {
+    id: "u8vP2Fx1oYA",
+    title: "Recorrido Casa Mediana",
+    duration: "1:48",
+    image: "/images/videos/u8vP2Fx1oYA.jpg",
+  },
+  {
+    id: "aIfePJI-6Mo",
+    title: "Quienes Somos",
+    duration: "9:13",
+    image: "/images/videos/aIfePJI-6Mo.jpg",
+  },
+];
+export const videoById = (id: string): Video => {
+  const video = videos.find((item) => item.id === id);
+  if (!video) throw new Error(`Video no registrado: ${id}`);
+  return video;
 };

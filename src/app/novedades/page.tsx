@@ -13,7 +13,7 @@ export default function Page() {
       </PageIntro>
       <section className="container content-section">
         <Notice>
-          Esta maqueta recupera publicaciones de 2022 del archivo institucional.
+          Esta proyecto recupera publicaciones de 2022 del archivo institucional.
           Sus actividades no son convocatorias vigentes. Los textos son
           resúmenes editoriales sujetos a aprobación.
         </Notice>

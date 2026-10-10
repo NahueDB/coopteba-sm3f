@@ -1,6 +1,7 @@
+import { VideoPlayer } from "@/components/ui/external-media";
 import type { Metadata } from "next";
 import Image from "next/image";
-import { commissions } from "@/content/site";
+import { commissions, videoById } from "@/content/site";
 import {
   PageIntro,
   SectionHeading,
@@ -74,10 +75,10 @@ export default function Page() {
               <div key={c}>{c}</div>
             ))}
           </div>
-          <p className="section-footnote">
-            Estructura de comisiones tomada del sitio anterior; pendiente de
-            revisión institucional.
-          </p>
+          <Notice>
+            La información de las comisiones se incorporará con la confirmación
+            institucional. No usamos datos históricos como si fueran actuales.
+          </Notice>
         </div>
       </section>
       <section className="section container">
@@ -86,6 +87,44 @@ export default function Page() {
           title="Una red de cooperación."
         />
         <InstitutionalCards />
+      </section>
+      <section className="section container">
+        <SectionHeading
+          eyebrow="Nuestra historia, en primera persona"
+          title="Quiénes somos, en video."
+        />
+        <div className="video-feature single-video">
+          <VideoPlayer video={videoById("aIfePJI-6Mo")} />
+          <div>
+            <p className="lead">
+              Una presentación del canal institucional para acercarte a la
+              propuesta cooperativa.
+            </p>
+            <Notice>
+              Material de archivo: revisar las cifras, autoridades y condiciones
+              que puedan aparecer. Confirmar subtítulos y transcripción antes de
+              publicar.
+            </Notice>
+          </div>
+        </div>
+      </section>
+      <section className="section news-section">
+        <div className="container">
+          <SectionHeading
+            eyebrow="FECOOPTEBA"
+            title="Una mirada a la red cooperativa."
+          />
+          <div className="video-grid">
+            <VideoPlayer video={videoById("pnyb3wsDwQg")} />
+            <VideoPlayer video={videoById("ugXP_WPF7A8")} />
+          </div>
+          <Notice>
+            Ambos videos tienen una duración de 4:42 y miniaturas iguales.
+            Revisar si sus contenidos son equivalentes y elegir una versión
+            definitiva. Son materiales de 2025, no información actualizada
+            automáticamente.
+          </Notice>
+        </div>
       </section>
       <ContactBlock />
     </>
