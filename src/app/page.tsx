@@ -21,7 +21,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">
             <span className="live-dot" />
-            Cooperativa de vivienda · SM3F
+            Coopteba · SM3F
           </p>
           <h1>
             La vivienda es
@@ -115,7 +115,7 @@ export default function Home() {
             title="Una casa propia. Una construcción compartida."
           >
             Somos una cooperativa de vivienda promovida desde SUTEBA, formada
-            por personas que se encontraron a partir de una necesidad concreta:
+            por docentes y compañerxs que se encontraron a partir de una necesidad concreta:
             la vivienda.
           </SectionHeading>
           <p>
@@ -127,8 +127,7 @@ export default function Home() {
             <div>
               <h3>Quiénes somos</h3>
               <p>
-                Personas que se organizan para transformar una necesidad en una
-                respuesta común.
+                Docentes y compañerxs que se organizan para transformar una necesidad en una respuesta común.
               </p>
             </div>
             <div>
@@ -151,11 +150,10 @@ export default function Home() {
               eyebrow="Cómo funciona"
               title="El primer paso es conocernos."
             >
-              No necesitás tener todas las respuestas. La reunión informativa es
-              un buen lugar para empezar.
+              La <strong>reunión informativa</strong> es el primer paso para conocer la cooperativa, la propuesta y despejar dudas.
             </SectionHeading>
             <Link className="text-link" href="/preguntas-frecuentes">
-              Despejá tus dudas <Arrow />
+              Preguntas frecuentes <Arrow />
             </Link>
           </div>
           <div className="steps-grid">
@@ -234,8 +232,7 @@ export default function Home() {
           </SectionHeading>
           <Notice>
             Video de archivo: corresponde a 2024, no a las actividades del año
-            actual. Su contenido completo y accesibilidad deben revisarse antes
-            de publicar.
+            actual.
           </Notice>
           <SocialLinks />
         </div>

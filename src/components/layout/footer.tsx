@@ -48,7 +48,7 @@ export function Footer() {
           <div>
             <h2>Un contacto para cada consulta.</h2>
             <p>
-              Contactos por área publicados en el sitio institucional. Vigencia
+              Contactos por área publicados en el sitio institucional. Notice:Vigencia
               pendiente de confirmación.
             </p>
           </div>

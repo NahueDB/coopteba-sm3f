@@ -60,7 +60,7 @@ export function Header() {
             href="/contacto"
             onClick={() => setOpen(false)}
           >
-            Contacto <span aria-hidden="true">↗</span>
+            Contacto<span aria-hidden="true">📞</span>
           </Link>
         </nav>
       </div>

@@ -98,10 +98,9 @@ export default function Page() {
           <VideoPlayer video={videoById("u8vP2Fx1oYA")} />
         </div>
         <Notice>
-          Estos recorridos son material de archivo. No acreditan disponibilidad
-          ni representan necesariamente las tipologías actuales. Confirmar a qué
-          proyectos corresponden y revisar las características antes de
-          publicarlas como vigentes.
+          Estos recorridos son material de archivo. No representan las tipologías actuales ni necesariamente garantiza la disponibilidad de unidades. <br/>
+          Confirmar a qué proyectos corresponden y revisar las características antes de publicarlas. <br/> 
+          <span style={{ fontWeight: "bold" }}>Si es posible, agregar recorridos de tipologías actuales y unidades disponibles.</span>
         </Notice>
       </section>
       <ContactBlock />

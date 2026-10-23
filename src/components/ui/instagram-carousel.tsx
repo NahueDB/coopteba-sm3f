@@ -2,6 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { instagram, type InstagramPost } from "@/content/site";
+import { Notice } from "./shared";
 const previews: InstagramPost[] = [
   {
     permalink: instagram.url,
@@ -98,11 +99,11 @@ export function InstagramCarousel() {
           </a>
         </div>
         {!real && (
-          <p className="instagram-disclaimer">
+          <Notice>
             Vista previa del carrusel: fotos del archivo institucional, no
             publicaciones de Instagram. La conexión a los últimos posts está
             pendiente.
-          </p>
+          </Notice>
         )}
         <div className="carousel-controls">
           <p>{real ? "Publicaciones cargadas" : "Vista previa del diseño"}</p>

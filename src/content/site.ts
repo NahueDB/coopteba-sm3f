@@ -122,21 +122,21 @@ export const faqs = [
     category: "Primeros pasos",
     question: "¿Cómo puedo conocer la propuesta?",
     answer:
-      "Podés comunicarte por teléfono o correo y solicitar una reunión informativa. Consultá previamente los horarios y la modalidad de atención.",
+      "Podés comunicarte por teléfono o correo y solicitar una reunión informativa <a href='/contacto' style='text-decoration: underline;'>acá</a>. Consultá previamente los horarios y la modalidad de atención.",
   },
   {
     id: "ubicacion",
     category: "Viviendas",
     question: "¿Dónde se desarrollan los proyectos?",
     answer:
-      "La información institucional sitúa sus edificios en los partidos de General San Martín y Tres de Febrero. En la sección de proyectos podés consultar las ubicaciones documentadas.",
+      "La información institucional sitúa sus edificios en los partidos de General San Martín y Tres de Febrero. En la sección de <a href='/viviendas-y-proyectos' style='text-decoration: underline;'>proyectos</a> podés consultar las ubicaciones documentadas.",
   },
   {
     id: "inscripcion",
     category: "Primeros pasos",
     question: "¿Hay inscripciones abiertas?",
     answer:
-      "Todavía no contamos con información actualizada y confirmada sobre nuevas inscripciones. Una consulta no equivale a una inscripción ni garantiza una vivienda: la cooperativa debe informar la disponibilidad y las condiciones vigentes.",
+      "Todavía no contamos con información actualizada y confirmada sobre nuevas inscripciones. Una consulta no equivale a una inscripción ni garantiza una vivienda: la cooperativa debe informar la disponibilidad y las condiciones vigentes. <br/> <span style='font-weight: bold;'>Notice: agregar información de cuando se abren los nuevos planes y cómo se comunica.</span>",
   },
   {
     id: "cuotas",

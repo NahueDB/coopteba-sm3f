@@ -17,8 +17,7 @@ export default function Page() {
         eyebrow="La cooperativa"
         title="Nos une una necesidad. Nos mueve un proyecto común."
       >
-        Personas que se organizan para construir viviendas y fortalecer una
-        comunidad en San Martín y Tres de Febrero.
+        Docentes y compañerxs que se organizan para construir viviendas y fortalecer una comunidad en San Martín y Tres de Febrero.
       </PageIntro>
       <div className="container wide-image">
         <Image

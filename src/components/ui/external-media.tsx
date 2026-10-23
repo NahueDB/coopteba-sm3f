@@ -101,7 +101,7 @@ export function InteractiveMap() {
               type="button"
               onClick={() => setLoaded(true)}
             >
-              Cargar mapa interactivo <span aria-hidden="true">↗</span>
+              Cargar mapa interactivo <span aria-hidden="true">👆</span>
             </button>
             <p className="media-privacy">
               Al cargar el mapa se establece una conexión con Google Maps.

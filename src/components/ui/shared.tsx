@@ -131,7 +131,7 @@ export function FAQs({ limit }: { limit?: number }) {
             {f.question}
             <span aria-hidden="true">+</span>
           </summary>
-          <p>{f.answer}</p>
+          <p dangerouslySetInnerHTML={{ __html: f.answer }} />
         </details>
       ))}
     </div>
