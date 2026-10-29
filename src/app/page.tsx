@@ -26,7 +26,7 @@ export default function Home() {
           <h1>
             La vivienda es
             <br />
-            un sueño.
+            una necesidad.
             <br />
             <span>
               Construirla,
